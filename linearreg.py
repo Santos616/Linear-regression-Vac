@@ -26,6 +26,8 @@ dataset.corr(method='pearson')
 plt.subplots(figsize=(10,8))
 sns.heatmap(dataset.corr())
 
+
+
 #statsmodel package can also give us some great insight and summary statistics including p-value
 #The statsmodel can actually perform the regression modeling for us , but here I am mainly using it to help determine which variable I should focus on for my Simple Linear Regression (one independent variable) 
 #and get a feel of which values are statistically significant. There are techniques when dealing with Multiple Linear Regression (many variable)
@@ -41,10 +43,6 @@ X_new = tools.add_constant(X)
 regressor_OLS = sml.OLS(endog = Y,exog =  X_new).fit()
 
 regressor_OLS.summary()
-
-
-
-
 
 
 
