@@ -6,7 +6,7 @@ import seaborn as sns
 
 #Loading our housing dataset
 #We will load our data on house sales in King County to predict house prices using simple (one input) linear regression
-dataset = pd.read_csv('datasets/kc_house_data.csv')
+dataset = pd.read_csv('datasets/housing.csv')
 Y = dataset[['price']]
 X = dataset.drop(['price', 'id', 'date'],  axis=1)
 #Data_Analysis
