@@ -12,3 +12,7 @@ The linear equation assigns one scale factor to each input value or column, call
 
 
 
+
+
+
+
