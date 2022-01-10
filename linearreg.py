@@ -44,5 +44,3 @@ regressor_OLS = sml.OLS(endog = Y,exog =  X_new).fit()
 
 regressor_OLS.summary()
 
-
-
